@@ -12,6 +12,20 @@ This project utilizes deep learning techniques for mosquito detection. The solut
 
 The solution includes a mobile application for the public to report mosquito sightings and track the progress of mosquito control efforts in their area. It also provides information on symptoms and preventive measures. With this mobile application, we engage the community in mosquito control efforts and enhance the effectiveness of our solution.
 
+## About this project
+
+To carry out this project, we have chosen the pre-trained model EfficientDet D1, which is part of the Tensorflow Model Zoo collection. You can find more information about this model at the following link: EfficientDet D1 in TensorFlow Model Zoo.
+
+The choice of this model is based on its speed (54 ms) and its COCO mAP score of 38.4. We consider it to be a good candidate for our tests due to its balance between speed and accuracy. We are also testing other models, such as Faster R-CNN ResNet101 V1 using Transfer Learning, and we plan to evaluate YOLO in the future.
+
+For this project, we have gathered images from different datasets on Kaggle, allowing us to collect around 4000 images. Additionally, we have created our own dataset with approximately 15000 images taken with our Raspberry Pi V2 8MP camera. Subsequently, we applied various image preprocessing techniques using OpenCV, such as normalization, equalization, Gaussian filtering, rotation, translation, brightness adjustment, among others.
+
+Once this work was completed, we proceeded to label around 14000 images with Aedes Aegypti mosquitoes.
+
+After this process, we prepared the script to perform the retraining of the model, incorporating our own mosquito dataset. In this step, we also started testing with Dropout to prevent Overfitting in our model.
+
+Once this process was completed, we converted the Tensorflow model to Tensorflow Lite to be able to test it on a Raspberry Pi 4.
+
 ## Details about my Raspberry PI
 
 The Raspberry Pi used is a Raspberry Pi 4 model with a 64-bit ARM processor architecture and a CPU frequency of 1.8 GHz. The operating system distribution is Debian GNU/Linux 11 (bullseye).
