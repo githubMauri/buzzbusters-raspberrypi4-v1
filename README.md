@@ -14,7 +14,7 @@ The solution includes a mobile application for the public to report mosquito sig
 
 ## About this project
 
-To carry out this project, we have chosen the pre-trained model EfficientDet D1, which is part of the Tensorflow Model Zoo collection. You can find more information about this model at the following link: EfficientDet D1 in TensorFlow Model Zoo.
+To carry out this project, we have chosen the pre-trained model EfficientDet D1, which is part of the Tensorflow Model Zoo collection. You can find more information about this model at the following link: https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md EfficientDet D1 in TensorFlow Model Zoo.
 
 The choice of this model is based on its speed (54 ms) and its COCO mAP score of 38.4. We consider it to be a good candidate for our tests due to its balance between speed and accuracy. We are also testing other models, such as Faster R-CNN ResNet101 V1 using Transfer Learning, and we plan to evaluate YOLO in the future.
 
@@ -141,4 +141,25 @@ After a few moments of initialization, a window will appear showing the webcam s
 
 This process may take several minutes, so please wait for the loading to complete.
 
+# We are also working with another model trained on Google Vertex AI. Here is more information about it:
 
+## Model 1 - Third Version - AutoML trained on Google Vertex AI
+
+We have created several versions of this model throughout our project:
+
+* The first version was trained with 1600 images in 8 hours.
+* The second version was trained with 8,302 images in 12 hours.
+* The third version was trained with 9,119 images in 24 hours.
+  
+This is the repository of the trained model used in the BuzzBusters project:
+
+https://github.com/githubMauri/buzzbusters-project/tree/master
+
+## Engaging the Community: Mobile Application for Mosquito Reporting and Control
+
+The solution includes a mobile application for the public to report mosquito sightings and track the progress of mosquito control efforts in their area. It also provides information on symptoms and preventive measures. With this mobile application, we engage the community in mosquito control efforts and enhance the effectiveness of our solution.
+
+https://github.com/moises-cisneros/solution_app.git
+  
+We continue working hard to improve and expand our project. If you have any questions, feel free to contact us.
+email: maunz69@gmail.com
